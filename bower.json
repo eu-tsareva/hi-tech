@@ -1,0 +1,17 @@
+{
+  "name": "hi-tech",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "tsareva"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
