@@ -1,0 +1,34 @@
+aside {
+  float: left;
+  width: 19.677419354839%;
+
+  .side-nav {
+    > li {
+      .padded-left;
+      padding-right: 25px;
+
+      > a {
+        display: block;
+        padding-top: 1.5625em;
+        padding-bottom: 1.5625em;
+
+        font-size: 0.75em;
+        line-height: 1;
+        font-weight: 800;
+        text-transform: uppercase;
+
+        border-top: 1px solid #eceeee;
+      }
+    }
+
+    > li:hover,
+    > li.active {
+      background-color: @primary;
+
+      > a {
+        color: #ffffff;
+        border: none;
+      }
+    }
+  }
+}

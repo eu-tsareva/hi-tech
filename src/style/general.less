@@ -14,7 +14,7 @@ a {
 
 
 h1, h2 {
-  margin: 1.3em 0;
+  margin: 0.6em 0;
   font-family: inherit;
   font-weight: 800;
   line-height: inherit;
@@ -31,7 +31,6 @@ p:not(:last-of-type) {
 
 .container {
   margin: 0 auto;
-  padding: 0 4.95%;
 
   background-color: @base-bg;
 
@@ -46,9 +45,44 @@ p:not(:last-of-type) {
   }
 }
 
-.inline-list {
+.padded-left {
+  @media (min-width: @screen-sm) {
+    padding-left: @side-padding-sm;
+  }
+  @media (min-width: @screen-md) {
+    padding-left: @side-padding-md;
+  }
+  @media (min-width: @screen-lg) {
+    padding-left: @side-padding-lg;
+  }
+}
+
+.padded-right {
+  @media (min-width: @screen-sm) {
+    padding-rigt: @side-padding-sm;
+  }
+  @media (min-width: @screen-md) {
+    padding-rigt: @side-padding-md;
+  }
+  @media (min-width: @screen-lg) {
+    padding-rigt: @side-padding-lg;
+  }
+}
+
+.inner-container {
+  .padded-left;
+  .padded-right;
+}
+
+
+.unstyled-list {
   margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.inline-list {
+  .unstyled-list;
 
   > li {
     display: inline-block;
