@@ -1,0 +1,51 @@
+.steps-list {
+  .unstyled-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5.196304849885%;
+
+  counter-reset: _counter;
+
+  @size: 6em;
+
+  > li {
+    position: relative;
+    flex-shrink: 0;
+
+    width: @size;
+    height: @size;
+
+    margin-right: 18.24480369515%;
+    margin-bottom: 10.623556581986%;
+    border: 5px solid @primary;
+
+    > span {
+      position: absolute;
+      top: 27.083333333333%;
+      left: 54.166666666667%;
+      z-index: 50;
+      width: 214.583333333333%;
+    }
+
+    &::after {
+      counter-increment: _counter;
+      content: counter(_counter);
+
+      position: absolute;
+      top: 18.75%;
+      left: 26.041666666667%;
+
+      padding-right: 0.5em;
+      padding-bottom: 0.5em;
+
+      font-size: 6.25em;
+      line-height: 0.5;
+      font-weight: 800;
+
+      color: #e8e8e8;
+      background-color: @secondary-bg;
+    }
+  }
+}
