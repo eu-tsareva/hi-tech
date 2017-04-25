@@ -1,0 +1,39 @@
+body {
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @text-color;
+  background-color: @body-bg;
+}
+
+a {
+  color: @link-color;
+  text-decoration: none;
+}
+
+
+h1, h2 {
+  margin: 1.3em 0;
+  font-family: inherit;
+  font-weight: 800;
+  line-height: inherit;
+  color: @heading-color;
+}
+
+h1 { font-size: @font-size-h1; }
+h2 { font-size: @font-size-h2; }
+
+p:not(:last-of-type) {
+  margin: 0;
+  margin-bottom: 2.25em;
+}
+
+.inline-list {
+  margin: 0;
+  list-style: none;
+
+  > li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
