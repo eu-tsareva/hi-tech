@@ -1,0 +1,22 @@
+.breadcrumbs {
+  padding: @breadcrumb-padding 0;
+  background-color: @breadcrumb-bg;
+
+  ul {
+    > li {
+      &:not(:last-child)::after {
+        display: inline-block;
+        margin-left: 7px;
+        content: @breadcrumb-separator;
+
+        color: @breadcrumb-separator-color;
+      }
+
+      > a {
+        font-size: 0.8125em;
+        line-height: 2.31;
+        color: @breadcrumb-color;
+      }
+    }
+  }
+}

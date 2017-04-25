@@ -1,9 +1,10 @@
 body {
+  margin: 0;
   font-family: @font-family-base;
   font-size: @font-size-base;
   line-height: @line-height-base;
   color: @text-color;
-  background-color: @body-bg;
+  background: @base-bg;
 }
 
 a {
@@ -28,12 +29,29 @@ p:not(:last-of-type) {
   margin-bottom: 2.25em;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 4.95%;
+
+  background-color: @base-bg;
+
+  @media (min-width: @screen-sm) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg) {
+    width: @container-lg;
+  }
+}
+
 .inline-list {
   margin: 0;
   list-style: none;
 
   > li {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 4px;
   }
 }
