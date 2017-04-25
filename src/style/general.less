@@ -14,19 +14,31 @@ a {
 
 
 h1, h2 {
-  margin: 0.6em 0;
   font-family: inherit;
   font-weight: 800;
-  line-height: inherit;
+  line-height: 1;
   color: @heading-color;
 }
 
-h1 { font-size: @font-size-h1; }
-h2 { font-size: @font-size-h2; }
+h1 {
+  margin: 0.6em 0;
+  font-size: @font-size-h1;
+}
+
+h2 {
+  margin: 1.25em 0;
+  font-size: @font-size-h2;
+}
 
 p:not(:last-of-type) {
   margin: 0;
   margin-bottom: 2.25em;
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
 }
 
 .container {
@@ -59,13 +71,13 @@ p:not(:last-of-type) {
 
 .padded-right {
   @media (min-width: @screen-sm) {
-    padding-rigt: @side-padding-sm;
+    padding-right: @side-padding-sm;
   }
   @media (min-width: @screen-md) {
-    padding-rigt: @side-padding-md;
+    padding-right: @side-padding-md;
   }
   @media (min-width: @screen-lg) {
-    padding-rigt: @side-padding-lg;
+    padding-right: @side-padding-lg;
   }
 }
 
