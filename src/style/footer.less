@@ -1,0 +1,44 @@
+.page-footer {
+  color: @footer-color;
+
+  background: @footer-bg url("../img/footer-pattern.png") repeat;
+
+  .footer-nav {
+    padding-top: 6.578947368421%;
+    font-size: 0;
+
+    section {
+      position: relative;
+
+      float: left;
+      width: 18.245614035088%;
+      margin-right: 1.754385964912%;
+      padding-left: 5.438596491228%;
+
+      font-size: @footer-font-size;
+      line-height: @footer-line-height;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    .list-title {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      font-size: 2.30769230769231em;
+      line-height: 1;
+      font-weight: 800;
+      color: #706f6f;
+
+      @leading: @footer-font-size * @footer-line-height - @footer-font-size;
+      @half-leading: @leading / 2;
+
+      transform: rotate(-90deg) translateX(-100%) translateX(-@half-leading);
+      transform-origin: left top;
+    }
+
+  }
+}

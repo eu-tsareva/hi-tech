@@ -1,0 +1,28 @@
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  display: block;
+  width: 100%;
+  margin-top: 0.76923076923077em;
+  padding: 1.84615384615385em 2.07692307692308em;
+
+  font-family: @font-family-secondary;
+  font-size: 0.8125em;
+  line-height: 1;
+  color: #4c4b4a;
+
+  background-color: @secondary-bg;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  box-sizing: border-box;
+
+  &::placeholder {
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+}
+
+.btn-submit {
+  margin-top: 2em;
+}
