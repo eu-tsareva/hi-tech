@@ -1,25 +1,27 @@
 .steps-list {
   .unstyled-list;
+  .inline-list;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 5.196304849885%;
 
   counter-reset: _counter;
+  font-size: 0;
 
   @size: 6em;
 
   > li {
     position: relative;
-    flex-shrink: 0;
-
     width: @size;
     height: @size;
+    margin-right: 22.170900692841%;
+    margin-bottom: 14.549653579677%;
 
-    margin-right: 18.24480369515%;
-    margin-bottom: 10.623556581986%;
+    font-size: @font-size-base;
     border: 5px solid @primary;
+
+    &:nth-child(3n) {
+      margin-right: 18.013856812933%;
+    }
 
     > span {
       position: absolute;
@@ -28,6 +30,7 @@
       z-index: 50;
       width: 214.583333333333%;
     }
+
 
     &::after {
       counter-increment: _counter;
