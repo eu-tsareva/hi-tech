@@ -8,20 +8,27 @@
 </head>
 <body>
   <header class="page-header container">
-    <div class="page-menu inner-container">
-      <nav class="page-nav">
-        <ul class="inline-list">
-          <li><a href="/"><img src="../img/logo.png" alt="ХайТек"></a></li>
-          <li><a href="#">компания</a></li>
-          <li><a href="#">решения</a></li>
-          <li><a href="#">купить</a></li>
+    <div class="page-menu inner-container clearfix">
+      <a class="menu-logo" href="/"><img src="../img/logo.png" alt="ХайТек"></a>
+      <div class="menu-wrapper">
+        <a class="menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+        </a>
+        <ul class="menu-nav unstyled-list">
+          <li class="menu-nav-item"><a href="#">компания</a></li>
+          <li class="menu-nav-item"><a href="#">решения</a></li>
+          <li class="menu-nav-item"><a href="#">купить</a></li>
+          <li class="menu-login"><a href="#">войти</a></li>
+          <li>
+            <div class="menu-search">
+              <input type="search" name="search" placeholder="поиск">
+            </div>
+          </li>
         </ul>
-      </nav>
-      <a class="login" href="#">войти</a>
-      <div class="search-wrapper">
-        <input type="search" name="search" placeholder="поиск">
       </div>
-      <span class="phone">+7 (499) 941-08-55<br>+7 (499) 545-45-11</span>
+      <div class="menu-phone">+7 (499) 941-08-55<br>+7 (499) 545-45-11</div>
     </div>
     <div class="breadcrumbs inner-container">
       <ul class="inline-list">
@@ -32,18 +39,18 @@
     </div>
   </header>
   <div class="wrapper-outter">
-    <div class="container">
+    <div class="content container">
         <h1 class="inner-container">Пусконаладочные работы</h1>
       <div class="wrapper-inner clearfix">
         <aside>
           <ul class="side-nav unstyled-list">
             <li><a href="#">Проектирование<br>Электромонтажные работы</a></li>
             <li><a href="#">Строительно-монтажные работы</a></li>
-            <li><a href="#">Транспортные услуги</a></li>
+            <li><a href="#">Транспортные <br>услуги</a></li>
             <li class="active"><a>Пусконаладочные работы</a></li>
           </ul>
         </aside>
-        <main class="content">
+        <main>
           <section class="content-block">
             <h2>Пусконаладочные работы для трансформаторных и распределительных подстанций</h2>
             <p>При поставке трансформаторных и распределительных подстанций «Трансформер»
@@ -53,12 +60,12 @@
           <section class="content-block content-block-reverse">
             <h2>Этапы работ по вводу подстанций в эксплуатацию:</h2>
             <ol class="steps-list">
-              <li><span>Монтаж строительной части и монтаж электрооборудования, не установленного<sup>*</sup> в подстанцию
-                в заводских условиях.</span></li>
-              <li><span>Проведение пусконаладочных работ</span></li>
-              <li><span>Сдача объекта в эксплуатацию заказчику и/или эксплуатирующей организации.</span></li>
-              <li><span>Оформление акта допуска электроустановки в эксплуатацию (осуществляется совместно с заказчиком).</span></li>
-              <li><span>Оформление гарантийного документа на подстанцию.</span></li>
+              <li class="steps-item"><div class="steps-item-inner"><span>Монтаж строительной части и монтаж электрооборудования, не установленного<sup>*</sup> в подстанцию
+                в заводских условиях.</span></div></li>
+              <li class="steps-item"><div class="steps-item-inner"><span>Проведение пусконаладочных работ</span></div></li>
+              <li class="steps-item"><div class="steps-item-inner"><span>Сдача объекта в эксплуатацию заказчику и/или эксплуатирующей организации.</span></div></li>
+              <li class="steps-item"><div class="steps-item-inner"><span>Оформление акта допуска электроустановки в эксплуатацию (осуществляется совместно с заказчиком).</span></div></li>
+              <li class="steps-item"><div class="steps-item-inner"><span>Оформление гарантийного документа на подстанцию.</span></div></li>
             </ol>
             <div class="content-footnote">
               <p>В комплектных трансформаторных и распределительных подстанциях «Трансформер» электрооборудование
