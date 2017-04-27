@@ -17,7 +17,7 @@
     max-width: 298px;
     min-width: 266px;
     margin-right: 0;
-    margin-bottom: 14.549653579677%;
+    margin-bottom: percentage(32px / 868px);
   }
 }
 
@@ -33,6 +33,7 @@
     top: 27.083333333333%;
     left: 54.166666666667%;
     z-index: 50;
+
     width: 214.583333333333%;
   }
 
@@ -54,5 +55,11 @@
 
     color: #e8e8e8;
     background-color: @secondary-bg;
+  }
+}
+
+@media screen and (max-width: @steps-list-md) {
+  .steps-list > li {
+    // margin-bottom: 30%;
   }
 }

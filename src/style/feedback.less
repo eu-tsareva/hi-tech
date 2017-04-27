@@ -24,3 +24,20 @@
     padding-top: percentage(6px / 368px);
   }
 }
+
+@media screen and (max-width: @feedback-md) {
+  .feedback-contacts,
+  .feedback-request {
+    float: none;
+    margin-bottom: 7%;
+  }
+
+  .feedback-contacts { width: 100%; }
+  .feedback-request { width: 80%; }
+}
+
+@media screen and (max-width: @feedback-sm) {
+  .feedback-request {
+    width: 100%;
+  }
+}

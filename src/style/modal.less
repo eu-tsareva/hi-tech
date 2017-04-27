@@ -2,18 +2,22 @@
   position: fixed;
   top: 15%;
   left: 50%;
+  z-index: 100;
 
   width: @modal-sm;
   height: auto;
   padding: @modal-padding;
 
-  text-align: center;
 
   background-color: @modal-bg;
   border: 1px solid @modal-border-color;
   border-radius: 10px;
 
   transform: translateX(-50%);
+
+  .btn-submit {
+    width: 100%;
+  }
 }
 
 .modal-overlay {

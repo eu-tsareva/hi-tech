@@ -22,9 +22,20 @@
   width: percentage(690px/1140px);
 }
 
+.menu-logo {
+  flex-shrink: 0;
+  width: 300px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .menu-btn {
   display: none;
   cursor: pointer;
+
 
   svg {
     width: 38px;
@@ -126,7 +137,7 @@
   }
 
   .menu-btn {
-    display: block;
+    display: inline-block;
   }
 
   .menu-nav {
@@ -164,5 +175,17 @@
     width: 80%;
     margin: 0 @nav-collapse-padding;
     padding: 14.5px 0;
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  .menu-logo {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: @screen-xs) {
+  .menu-phone {
+    display: none;
   }
 }
