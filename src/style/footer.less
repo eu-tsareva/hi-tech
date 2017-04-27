@@ -84,22 +84,54 @@
 
 .footer-company {
   float: left;
-  width: 40.701754385965%;
+  width: 50%;
 }
 
 .footer-support {
   float: right;
-  max-width: 25.438596491228%;
+  max-width: 50%;
 
 
   &::before {
     display: inline-block;
     width: 15px;
     height: 20px;
-    margin-right: 35px;
+    margin-right: 3.18em;
     content: "";
     vertical-align: middle;
 
     background: url("../img/support-logo.png") no-repeat;
+  }
+}
+
+@media screen and (max-width: @footer-md) {
+  .page-footer {
+    section {
+      width: 23.6%;
+      padding-left: 0;
+      font-size: 11px;
+    }
+
+    .list-title {
+      display: none;
+    }
+
+    .icon-link::before {
+      .square(16px);
+      background-size: contain;
+    }
+  }
+
+  .footer-copyright {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: @footer-sm) {
+  .page-footer {
+    section {
+      width: 45%;
+      margin-bottom: 5%;
+    }
   }
 }

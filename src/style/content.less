@@ -29,3 +29,13 @@ main {
 .content-block-reverse {
   background-color: @secondary-bg;
 }
+
+@media screen and (max-width: @aside-collapse) {
+  .wrapper-inner {
+    .padded-left;
+  }
+  
+  main {
+    width: 100%;
+  }
+}

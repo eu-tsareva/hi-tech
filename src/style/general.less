@@ -1,10 +1,18 @@
 body {
   margin: 0;
   font-family: @font-family-base;
-  font-size: @font-size-base;
+  font-size: @font-size-base * 0.78125;
   line-height: @line-height-base;
   color: @text-color;
   background: @base-bg;
+
+
+  @media (min-width: @screen-sm) {
+    font-size: @font-size-base * 0.875;
+  }
+  @media (min-width: @screen-lg) {
+    font-size: @font-size-base;
+  }
 }
 
 a {
@@ -22,15 +30,29 @@ h1, h2, h3 {
 
 h1 {
   margin: 0.75em 0;
-  font-size: @font-size-h1;
+  font-size: @font-size-h1 * 0.6;
+
+  @media (min-width: @screen-sm) {
+    font-size: @font-size-h1 * 0.8;
+  }
+  @media (min-width: @screen-lg) {
+    font-size: @font-size-h1;
+  }
 }
 
 h2 {
   margin-top: 1.5625em;
   margin-bottom: 1.10416666666667em;
 
-  font-size: @font-size-h2;
+  font-size: @font-size-h2 * 0.65;
   line-height: 1.2;
+
+  @media (min-width: @screen-sm) {
+    font-size: @font-size-h2 * 0.833;
+  }
+  @media (min-width: @screen-lg) {
+    font-size: @font-size-h2;
+  }
 }
 
 p {
@@ -54,6 +76,10 @@ h2 + p {
   margin: 0 auto;
 
   background-color: @base-bg;
+
+  @media screen and (max-width: @container-collapse) {
+    width: 100%;
+  }
   //
   // @media (min-width: @screen-sm) {
   //   width: @container-sm;
@@ -67,9 +93,8 @@ h2 + p {
 }
 
 .padded-left {
-  @media (min-width: @screen-sm) {
-    padding-left: @side-padding-sm;
-  }
+  padding-left: @side-padding-sm;
+
   @media (min-width: @screen-md) {
     padding-left: @side-padding-md;
   }
@@ -79,9 +104,8 @@ h2 + p {
 }
 
 .padded-right {
-  @media (min-width: @screen-sm) {
-    padding-right: @side-padding-sm;
-  }
+  padding-right: @side-padding-sm;
+
   @media (min-width: @screen-md) {
     padding-right: @side-padding-md;
   }

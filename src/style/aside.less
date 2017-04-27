@@ -33,3 +33,17 @@ aside {
     }
   }
 }
+
+@media screen and (max-width: @aside-collapse) {
+  aside {
+    position: relative;
+    width: 0;
+
+    .side-nav {
+      position: absolute;
+
+      width: 150px;
+      transform: translateX(-1000px);
+    }
+  }
+}
