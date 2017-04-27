@@ -1,0 +1,35 @@
+.page-header {
+  margin-bottom: 7px;
+}
+
+.page-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: @header-height;
+
+  font-family: @font-family-secondary;
+  font-size: 0.6875em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: @header-color;
+
+  border-bottom: 4px solid @primary;
+
+  .login::before {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-right: 1.45em;
+    vertical-align: middle;
+    content: "";
+
+    background: transparent url("../img/login.png") center center no-repeat;
+  }
+
+  .phone {
+    font-size: 1.18181818181818em;
+    line-height: 1.63636363636364;
+  }
+}

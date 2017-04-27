@@ -1,0 +1,22 @@
+.page-nav {
+  width: percentage(657px / 1140px);
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > li > a {
+      display: block;
+
+      font-family: @font-family-base;
+      font-size: 1.09090909090909em;
+      font-weight: 800;
+      color: @nav-link-color;
+
+      &:hover {
+        color: @nav-link-hover-color;
+      }
+    }
+  }
+}
