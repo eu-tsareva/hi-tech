@@ -90,7 +90,7 @@
                 <form action="" method="post">
                   <ul class="unstyled-list">
                     <li><input type="text" name="name" placeholder="ваше имя"></li>
-                    <li><input type="number" name="phone" placeholder="телефон"></li>
+                    <li><input type="tel" name="phone" placeholder="телефон"></li>
                     <li><input type="email" name="email" placeholder="email">  </li>
                   </ul>
                   <button class="btn btn-submit" type="submit">отправить</button>
@@ -156,5 +156,17 @@
       </div>
     </footer>
   </div>
+  <div class="modal-overlay hide"></div>
+  <div class="modal modal-call hide">
+    <button class="modal-btn-close" type="button">Закрыть</button>
+    <form action="" method="post">
+      <ul class="unstyled-list">
+        <li><input type="text" name="name" placeholder="ваше имя"></li>
+        <li><input type="tel" name="phone" placeholder="телефон"></li>
+      </ul>
+      <button class="btn btn-submit" type="submit">заказать звонок</button>
+    </form>
+  </div>
+  <script src="./js/main.js"></script>
 </body>
 </html>
