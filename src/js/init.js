@@ -42,9 +42,9 @@ $(function() {
   });
 
   $('.steps-list').children('li').map(function(index, item) {
-    var $span = $(item).find('span'),
-        childHeight = $span.height() + $span.position().top,
-        height = (childHeight < $(item).height()) ? $(item).height() : childHeight;
+    var $text = $(item).find('.steps-item-text'),
+        childHeight = $text.height(),
+        height = Math.max(childHeight, 90);
     $(item).height(height);
   });
 });
